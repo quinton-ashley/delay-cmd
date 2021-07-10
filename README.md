@@ -26,29 +26,29 @@ delay-cmd two hours && npm start
 Must be used in an async function.
 
 ```javascript
-const delayCmd = require('delay-cmd');
-await delayCmd('five seconds');
+const delayCmd = require("delay-cmd");
+await delayCmd("five seconds");
 ```
 
-I made `delay-cmd` as a CLI.  For node.js use I recommend implementing this:
+I made `delay-cmd` as a CLI. For node.js use I recommend implementing this:
 
 ```javascript
 //setup
-const delay = require('delay');
-const humanInterval = require('human-interval');
+const delay = require("delay");
+const humanInterval = require("human-interval");
 
 async function delayCmd(time) {
-  console.log('waiting for' + time);
+  console.log("waiting for" + time);
   await delay(humanInterval(time));
 }
 
 //usage
-await delayCmd('five seconds');
+await delayCmd("five seconds");
 ```
 
-### Please consider donating!
+### Tip me!
 
-If you appreciate this project and the work I've done so far please donate!  Any amount is accepted.  Thank you :)
- 
+If you appreciate my work please tip me! Any amount is good. Thank you :)
+
 Patreon: <https://www.patreon.com/qashto>  
 Paypal: <https://www.paypal.me/qashto/5>
